@@ -21,6 +21,7 @@ public class PostAPIController {
     }
 
     // RequestBody로 사용자의 이름, 전화번호, 이메일을 받는 POST Method 만들기 (User 클래스 생성, 주소 지정, 해당 데이터 받기)
+    // http://localhost:8080/api/user
     @PostMapping("/user")
     public UserRequest Uesr(
             @RequestBody UserRequest userRequest
