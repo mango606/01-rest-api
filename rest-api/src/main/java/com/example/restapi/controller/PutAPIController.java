@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class PutAPIController {
 
+    // http://localhost:8080/api/put
     @PutMapping("/put")
     public void put(
             @RequestBody UserRequest userRequest
