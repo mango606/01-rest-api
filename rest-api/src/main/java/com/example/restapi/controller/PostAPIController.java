@@ -1,6 +1,7 @@
 package com.example.restapi.controller;
 
 import com.example.restapi.model.BookRequest;
+import com.example.restapi.model.UserRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,4 +21,11 @@ public class PostAPIController {
     }
 
     // RequestBody로 사용자의 이름, 전화번호, 이메일을 받는 POST Method 만들기 (User 클래스 생성, 주소 지정, 해당 데이터 받기)
+    @PostMapping("/user")
+    public UserRequest Uesr(
+            @RequestBody UserRequest userRequest
+    ) {
+        System.out.println(userRequest);
+        return userRequest;
+    }
 }
