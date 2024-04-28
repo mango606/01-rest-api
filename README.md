@@ -17,6 +17,10 @@
   2. [수동으로 받는 방법](http://localhost:8080/api/book2?category=IT&issuedYeer=2023&issuedMonth=01&issuedDay=31)
 - Query Parameter: 특정 정보의 필터링
   - 주소 뒤에 ?로 시작, &로 묶음
+ 
+## 04. REST API-POST-01
+- HTTP Body에 데이터를 담는 방법(xml, text, **json**)
+- [Talend API Tester - Free Edition](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm?hl=ko) 사용
 
 ### [5 METHOD](https://velog.io/@xangj0ng/HTTP-5-METHODGET-POST-PUTPATCHDELETE)
 ||의미|CRUD|멱등성|안정성|Path Variable|Query Parameter|DataBody|
