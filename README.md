@@ -19,6 +19,7 @@
   - 주소 뒤에 ?로 시작, &로 묶음
  
 ## 04. REST API-POST-01
+- http://localhost:8080/api/post
 - HTTP Body에 데이터를 담는 방법(xml, text, **json**)
 - [Talend API Tester - Free Edition](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm?hl=ko) 사용
 ```
@@ -30,6 +31,7 @@
 ```
 
 ## 05. REST API-POST-02
+- http://localhost:8080/api/user
 - RequestBody 사용
 - JsonNaming으로 변수 매핑
 ```
@@ -49,6 +51,7 @@
   2. carmel case: 소문자로 시작, 대문자로 구분
  
 ## 06. REST API-PUT
+- http://localhost:8080/api/put
 - Slf4j 사용으로 sout 대체(서버 속도 저하 해결)
 - JSON boolean 타입 오류 2가지 방법
   1. is_korean이 아닌 korean으로 전송(의미 전달X)
@@ -61,6 +64,11 @@
   "is_korean" : true
 }
 ```
+
+## 07. REAT API-DELETE
+- http://localhost:8080/api/user/abcd/delete
+- path 값으로 주소를 여러 개 사용할 수 있음.(한 가지 주소를 사용하는 것이 좋음)
+- 주소 이름을 잘못 설계 했을 때 모든 클라이언트 주소 변경 후 삭제
 
 ### [5 METHOD](https://velog.io/@xangj0ng/HTTP-5-METHODGET-POST-PUTPATCHDELETE)
 ||의미|CRUD|멱등성|안정성|Path Variable|Query Parameter|DataBody|
