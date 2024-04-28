@@ -1,8 +1,10 @@
 package com.example.restapi.controller;
 
 import com.example.restapi.model.BookQueryParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @RestController
 @RequestMapping("/api")
 public class RestApiController {
@@ -60,4 +62,16 @@ public class RestApiController {
 
     // TODO: Parameter 2가지 받기. int 타입으로 받아서 두 수의 덧셈, 곱셈
     // TODO: String 타입, boolean 타입도 받아보기
+
+    // http://localhost:8080/api/user/abcd/delete
+    @DeleteMapping(path ={
+            "/user/{userName}/delete",
+            "/user/{userName}/del"
+        }
+    )   // passValue와 queryParam 둘 다 가능
+    public void delete(
+            @PathVariable String userName
+    ) {
+        log.info("user-name : {}", userName);
+    }
 }
