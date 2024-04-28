@@ -47,6 +47,20 @@
 - JSON을 표현하는 방법 2가지
   1. **snake case**: 소문자, _로 구분
   2. carmel case: 소문자로 시작, 대문자로 구분
+ 
+## 06. REST API-PUT
+- Slf4j 사용으로 sout 대체(서버 속도 저하 해결)
+- JSON boolean 타입 오류 2가지 방법
+  1. is_korean이 아닌 korean으로 전송(의미 전달X)
+  2. boolean이 아닌 Boolean 사용
+```
+{
+  "user_name" : "홍길동",
+  "user_age" : 10,
+  "email" : "hong@gmail.com",
+  "is_korean" : true
+}
+```
 
 ### [5 METHOD](https://velog.io/@xangj0ng/HTTP-5-METHODGET-POST-PUTPATCHDELETE)
 ||의미|CRUD|멱등성|안정성|Path Variable|Query Parameter|DataBody|
