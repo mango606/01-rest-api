@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-public class PutAPIController {
+public class PutApiController {
 
     // http://localhost:8080/api/put
     @PutMapping("/put")
