@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class PostAPIController {
+public class PostApiController {
 
     // http://localhost:8080/api/post
     @PostMapping("/post")
