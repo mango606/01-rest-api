@@ -77,12 +77,3 @@
 |POST|리소스 생성, 추가|C|X|X|O|△|O|
 |PUT|리소스 갱신, 생성|C / U|O|X|O|△|O|
 |DELETE|리소스 삭제|D|O|X|O|O|X|
-
----
-
-## 01. Response Entity
-|String|일반 Text Type 응답|
-|---|---|
-|Object|자동으로 Json 변환되어 응답|
-|ResponseEntity|Body의 내용을 Object로 설정, 상황에 따라서 HttpStatus Code 설정|
-|@ResponseBody|RestController가 아닌 곳(Controller)에서 Json 응답을 내릴 때|
